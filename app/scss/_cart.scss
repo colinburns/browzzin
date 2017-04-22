@@ -1,0 +1,105 @@
+#AddToCartOverlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+#AddToCart {
+  font-family: $header-font-stack;
+  display: none;
+  background-color: $body-background;
+  width: 800px;
+  margin: 100px auto;
+  position: relative;
+  max-height: 610px;
+  .close-add-to-cart {
+    background-color: $body-background;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -51px;
+    top: 0;
+    text-align: center;
+    img {
+      zoom: 25%;
+      margin-top: 50px;
+    }
+  }
+  #AddToCartContent {
+    box-sizing: border-box;
+    padding: 50px;
+    overflow-y: scroll;
+    max-height: 610px;
+    #AddToCartContentTop {
+      @include clearfix;
+    }
+    .product-feature-image {
+      width: 250px;
+      float: left;
+    }
+    .product-content {
+      position: relative;
+      width: calc(100% - 300px);
+      float: left;
+      padding: 0 0 0 30px;
+      color: #8c8d91;
+      h3 {
+        margin: 0;
+        a {
+          color: #8c8d91;
+          text-decoration: none;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+      .product-spacer {
+        display: block;
+        margin: 6px 0;
+        span {
+          display: inline-block;
+          width: 80px;
+          font-size: 14px;
+        }
+        &.product-size {
+          display: inline-block;
+        }
+        &.product-quantity {
+          display: inline-block;
+        }
+      }
+      .product-add-to-cart {
+        display: block;
+        margin-top: 134px;
+        width: 200px;
+      }
+      .product-heart {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        right: 50px;
+        background-size: 100%;
+        &.inactive {
+          @include background('../images/icon-heart-inactive.png');
+        }
+        &.active {
+          @include background('../images/icon-heart-active.png');
+        }
+      }
+    }
+    h4 {
+      margin: 20px 0 0 0;
+    }
+    p {
+      color: #8c8d91;
+      margin-top: 5px;
+    }
+  }
+}

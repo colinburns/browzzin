@@ -1,0 +1,835 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Browzzin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--build:css css/styles.min.css -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- endbuild -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href="index.html" class="pull-left">
+			<img src="images/browzzin-logo.png" alt="Browzzin Logo - browzzin.com" class="logo-size" />
+		</a>
+		<form class="pull-left"><input type="text" id="BrowzzinSearch" placeholder="Search" /><button></button></form>
+		<nav id="TopNavigation" class="pull-right">
+			<nav class="center-navigation">
+				<a href="/">Inspiration</a>
+				<a href="/">Shop</a>
+				<a href="/" class="icon-top-navigation"><img src="images/icon-heart-inactive.png" class="hearting" /></a>
+				<a href="/" class="icon-top-navigation"><img src="images/icon-notification.png" class="notifications" /></a>
+				<a href="/" class="icon-top-navigation"><img src="images/icon-cart.png" class="shopping-basket" /></a>
+			</nav>
+			<div id="ProfileTrigger">
+				<span>Amanda Hills</span>
+				<img src="images/profile-amanda-hills.png" alt="Profile picture for Amanda Hills" />
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+				<ul id="ProfileMenu">
+					<li><a href="/">My Account</a></li>
+					<li><a href="/">Inspiration</a></li>
+					<li><a href="/">Shop</a></li>
+					<li><a href="/" class="heart-icon-link">Favourites</a></li>
+					<li><a href="/" class="notification-icon-link">Notifications</a></li>
+					<li><a href="/" class="basket-icon-link">Basket</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="LoadMoreContentButton">
+		<a href="#">Load more latest content</a>
+	</div>
+	<div id="ContentContainer" class="layout-grid column-4"><!-- other class option is layout-grid -->
+		<!-- Column Navigation -->
+		<div id="GridNavigation">
+			<a href="#" class="grid-layout-trigger active" data-column-count="4"><img src="images/icon-column-4.png" /></a>
+			<a href="#" class="grid-layout-trigger" data-column-count="3"><img src="images/icon-column-3.png" /></a>
+			<a href="#" class="grid-layout-trigger" data-column-count="2"><img src="images/icon-column-2.png" /></a>
+			<a href="#" class="grid-layout-trigger" data-column-count="1"><img src="images/icon-column-1.png" /></a>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-3.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-1.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-2.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-4.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-5.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-6.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-7.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-8.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-9.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-10.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-11.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-12.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-13.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-14.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-15.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-16.jpg" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-17.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-18.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-19.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-20.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-21.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-22.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-23.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-24.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-25.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-26.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-27.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-28.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-29.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-30.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-31.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-32.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-33.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-34.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-35.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- Start Item -->
+		<div class="item-container">
+			<div class="item-header">
+				<a href="/"><img src="images/profile-jennifer.png" class="profile-pic" /> <span>Jennifer</span></a>
+				<a href="/"><img src="images/icon-share.png" class="share" /></a>
+			</div>
+			<img src="images/products/product-36.png" class="product-image" />
+			<div class="item-footer">
+				<a href="/" class="save-button"><img src="images/icon-save-b.png" class="save-button" /></a>
+				<span>
+					<a href="/" class="hearts-button">
+						<img src="images/icon-heart-inactive.png" class="heart-button" />
+						<span class="heart-count">238</span>
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<nav>
+			<a href="#">About Us</a>
+			<a href="#">Mobile App</a>
+			<a href="#">FAQs</a>
+			<a href="#">Social Media</a>
+			<a href="#">Terms &amp; Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<span>BROWZZIN.<br>&copy; 2017</span>
+		</nav>
+	</footer>
+	<div id="PopOver">
+		<div id="LeftPane">
+			<a href="#" class="back-button"></a>
+			<img src="images/popup-product/popup-outfit.jpg" class="product-feature" />
+			<a href="#" class="forward-button"></a>
+			<div id="LeftPaneController">
+				<a href="#" class="share-this">
+					<img src="images/icon-share.png" class="left-share-button" />
+				</a>
+				<a href="#" class="save-this">
+					<img src="images/icon-save-a.png" class="left-save-button" />
+				</a>
+				<a href="#" class="heart-this">
+					<img src="images/icon-heart-inactive-light.png" class="left-heart-button" />
+				</a>
+			</div>
+		</div>
+		<div id="RightPane">
+			<a href="#" class="tab-trigger active comments-trigger" data-action="comments-tab">
+				<img src="images/popup-product/icon-comment.png" />
+			</a>
+			<a href="#" class="tab-trigger products-trigger" data-action="products-tab">
+				<img src="images/popup-product/icon-tags.png" />
+			</a>
+			<div class="popup-tabs comments-tab">
+				<div class="profile-header">
+					<img src="images/profile-amanda-hills.png" class="tab-profile-image"/>
+					<span class="user-name">amanda</span>
+					<span class="followers">56k</span>
+					<img src="images/popup-product/icon-follow.png" class="tab-follow-button"/>
+					<a href="#" class="close-popover">
+						<img src="images/popup-product/icon-cross.png"/>
+					</a>
+				</div>
+				<div class="comments-container">
+					<span class="likes-count">678 likes</span>
+					<span class="posted-date">2d</span>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">amanda</a> Top to toe in powder pink! Such woman power! <a href="#" class="hashtag">#pink</a> <a href="#" class="hashtag">#suits</a> <a href="#" class="hashtag">#chloe
+					</div>
+					<a href="" class="see-more-comments">see 435 more comments
+					<div class="posted-comment">
+						<a href="#" class="profile-link">april</a> Georgeous <3
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">maria</a> this is beautiful outfit!
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">julia</a> Such a lovely pink colour, it softens the masculine appeal for the suits.
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">sarah</a> Powerful outfit!
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">helen</a> OMG! the fringes bag!
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">giorgina</a> this makes you look taller, girl!
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">westin</a> FAB ~
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">william</a> spotlight all on you
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">adam</a> hey dear, you look good
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">jen</a> wow, love you!
+					</div>
+					<div class="posted-comment">
+						<a href="#" class="profile-link">lena</a> i really like this shade of pink
+					</div>
+					<form>
+						<textarea class="comment-input" placeholder="Add a comment..."></textarea>
+						<input type="submit" class="comment-submit" value="Post" />
+					</form>
+				</div>
+			</div>
+			<div class="popup-tabs products-tab">
+				<!-- Start product -->
+				<div class="product-holder">
+					<img src="images/popup-product/popup-product-3.jpg" class="product-feature-image"/>
+					<div class="product-content">
+						<h3><a href="#">BRAND</a></h3>
+						<span class="product-description product-spacer">Nude Pink Blazer</span>
+						<span class="product-price product-spacer">$78.90</span>
+						<span class="product-size product-spacer"><span>Size</span> <select><option value="S">S</option><option value="M">M</option><option value="L">L</option></select></span>
+						<span class="product-quantity product-spacer"><span>Quantity</span> <select><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></span>
+						<a href="#"><img src="images/popup-product/icon-add-to-cart.png" class="product-add-to-cart" /></a>
+						<a href="#" class="product-heart inactive"></a>
+					</div>
+				</div>
+				<!-- Start product -->
+				<div class="product-holder">
+					<img src="images/popup-product/popup-product-2.jpg" class="product-feature-image"/>
+					<div class="product-content">
+						<h3><a href="#">BRAND</a></h3>
+						<span class="product-description product-spacer">Nude Pink Blazer</span>
+						<span class="product-price product-spacer">$78.90</span>
+						<span class="product-size product-spacer"><span>Size</span> <select><option value="S">S</option><option value="M">M</option><option value="L">L</option></select></span>
+						<span class="product-quantity product-spacer"><span>Quantity</span> <select><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></span>
+						<a href="#"><img src="images/popup-product/icon-add-to-cart.png" class="product-add-to-cart" /></a>
+						<a href="#" class="product-heart active"></a>
+					</div>
+				</div>
+				<!-- Start product -->
+				<div class="product-holder">
+					<img src="images/popup-product/popup-product-1.jpg" class="product-feature-image"/>
+					<div class="product-content">
+						<h3><a href="#">BRAND</a></h3>
+						<span class="product-description product-spacer">Nude Pink Blazer</span>
+						<span class="product-price product-spacer">$78.90</span>
+						<span class="product-size product-spacer"><span>Size</span> <select><option value="S">S</option><option value="M">M</option><option value="L">L</option></select></span>
+						<span class="product-quantity product-spacer"><span>Quantity</span> <select><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></span>
+						<a href="#"><img src="images/popup-product/icon-add-to-cart.png" class="product-add-to-cart" /></a>
+						<a href="#" class="product-heart inactive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="AddToCartOverlay" class="add-to-cart-overlay">
+		<div id="AddToCart" class="add-to-cart-overlay">
+			<a href="#" class="close-add-to-cart"><img src="images/popup-product/icon-cross.png"/></a>
+			<div id="AddToCartContent">
+				<div id="AddToCartContentTop">
+				<img src="images/popup-product/popup-product-3.jpg" class="product-feature-image"/>
+					<div class="product-content">
+						<h3><a href="#">BRAND</a></h3>
+						<span class="product-description product-spacer">Nude Pink Blazer</span>
+						<span class="product-price product-spacer">$78.90</span>
+						<span class="product-size product-spacer"><span>Size</span> <select><option value="S">S</option><option value="M">M</option><option value="L">L</option></select></span>
+						<span class="product-quantity product-spacer"><span>Quantity</span> <select><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></span>
+						<a href="#"><img src="images/popup-product/icon-add-to-cart.png" class="product-add-to-cart" /></a>
+						<a href="#" class="product-heart active"></a>
+					</div>
+				</div>
+				<h4>Product Description:</h4>
+				<p>A luxe 3.1 Phillip Lim bommer with a sleek satin front panel and crackled faux-leather flower appliqués. Zip side pockets and zip front. Metallic detailing at striped, ribbed edges and collar. Zippers accent the long sleeves.</p>
+				<h4>Composition:</h4>
+				<p>Fabric: Satin / wool suiting. 100% wool. 100% silk.</p>
+				<h4>Care Label:</h4>
+				<p>Washing Instruction: Dry clean only</p>
+			</div>
+		</div>
+	</div>
+<!--build:js js/main.min.js -->
+<script src="js/lib/jquery.1.7.2.js"></script>
+<script src="js/lib/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

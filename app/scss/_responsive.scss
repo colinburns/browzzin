@@ -1,0 +1,24 @@
+@include respond-to(xsmall) {
+
+}
+@include respond-to(small) {
+
+}
+@include respond-to(medium) {
+  .layout-grid {
+    &.column-1 {
+      #GridNavigation {
+        width: calc(100% - 25px)!important;
+        left: 14px;
+      }
+      .item-container {
+        width: calc(100% - 25px);
+      }
+    }
+    .item-container {
+      float: left;
+      margin: 20px 1.5% 0 1.5%;
+      padding-bottom: 0;
+    }
+  }
+}

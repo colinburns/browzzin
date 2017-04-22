@@ -1,0 +1,141 @@
+.layout-grid {
+  z-index: 10;
+  @include clearfix;
+  &.column-4 {
+    .item-container {
+      width: 21.8%;
+    }
+  }
+  &.column-3 {
+    .item-container {
+      width: 30%;
+    }
+  }
+  &.column-2 {
+    .item-container {
+      width: 47.0%;
+    }
+  }
+  &.column-1 {
+    box-sizing:border-box;
+    max-width: 1024px;
+    .item-container {
+      width: 100%;
+    }
+  }
+  .item-container {
+    float: left;
+    margin: 20px 1.5% 0 1.5%;
+  }
+}
+.item-container {
+  background-color: $item-background;
+  margin-top: 20px;
+  position: relative;
+  font-family: $font-stack;
+  overflow: hidden;
+  cursor: pointer;
+  .product-image {
+    width: 100%;
+  }
+  .item-header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    @include alpha-background-color(rgba(white, 0.8), white);
+    line-height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    span {
+
+    }
+    a {
+      color: black;
+      span {
+        padding-left: 40px;
+        display: inline-block;
+      }
+      img {
+        &.profile-pic {
+          height: 25px;
+          position: absolute;
+          left: 10px;
+          top: 7px;
+          border-radius: 50%;
+        }
+        &.share {
+          height: 15px;
+          position: absolute;
+          right: 10px;
+          top: 11px;
+        }
+      }
+    }
+  }
+  .item-footer {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    @include alpha-background-color(rgba(white, 0.8), white);
+    line-height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    img {
+      &.save-button {
+        margin-top: 7px;
+        height: 30px;
+      }
+    }
+    span {
+      float: right;
+      line-height: 30px;
+      a {
+        color: #393939;
+        text-decoration: none;
+        span {
+          &.heart-count {
+            line-height: 45px;
+            padding-right: 10px;
+          }
+        }
+        img {
+          &.heart-button {
+            float: right;
+            margin-top: 7px;
+            height: 30px;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-to(xsmall) {
+  .layout-grid {
+    @include clearfix;
+    &.column-4 {
+      .item-container {
+        width: calc(100% - 13px);
+      }
+    }
+    &.column-3 {
+      .item-container {
+        width: calc(100% - 13px);
+      }
+    }
+    &.column-2 {
+      .item-container {
+        width: calc(100% - 13px);
+      }
+    }
+    &.column-1 {
+      .item-container {
+        width: calc(100% - 13px);
+      }
+    }
+  }
+}
