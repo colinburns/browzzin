@@ -736,8 +736,8 @@ footer {
     top: 0;
     text-align: center; }
     #AddToCart .close-add-to-cart img {
-      zoom: 25%;
-      margin-top: 50px; }
+      width: 25px;
+      margin-top: 13px; }
   #AddToCart #AddToCartContent {
     box-sizing: border-box;
     padding: 50px;

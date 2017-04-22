@@ -15,19 +15,14 @@ This project uses GULP to combine, minify and build the final source code. See *
 * `package.json` // Stores all the node requirements for this project
 
 ## Installation Instructions
-This project can be installed in several ways, either using `gulp` or using a standard web server.
-
-### Standard Web server
-Either clone or download this repository. If you are using a standard webserver then copy the files and directories that are in the `/dist` directory and place them in your webroot. Open your web browser and visit http://localhost or enter the URL that accesses your webroot.
-
-**NOTE: This can not be run by simply double clicking the index.html file in the file browser because the application uses AJAX to load various bit of content**
+This project can be installed in several ways, either using `gulp` or simply navigate to the `/dist/` directory and click on the `index.html` file which will open in your browser. All implemented functionality should work in the browser without a web server.
 
 ### Gulp
 If you have all the required gulp packages installed you should simply be able to run the command `gulp` from within the root directory and it will spawn a browser window running the app in the browser. The url will be something like http://localhost:3000. When you run the `gulp` command the URL will be displayed in the terminal output if your browser window doesn't load the site.
 
-
-
 ## Notes about the work completed
+FONTS & COLOUR: I'm not 100% sure I have used the fonts correctly as I find it difficult to distinguish these fonts via a JPEG. If I had the source files I would be able to ensure that the fonts and colours area correctly displayed.
 
+SELECT BOXES: Select boxes on the Cart don't match the design.
 
-## Bugs
+POPOVER: The popover has been implemented but it is not responsive for mobile devices as I was unsure of the design that I should implement.
