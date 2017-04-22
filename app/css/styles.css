@@ -473,9 +473,16 @@ footer {
     position: relative;
     background-color: #fafafc;
     width: calc(100% - 500px);
+    min-width: 320px;
     float: left;
     height: 100%;
-    text-align: center; }
+    text-align: center;
+    display: table-cell; }
+    #PopOver #LeftPane .responsive-feature-image {
+      display: flex;
+      width: 100%;
+      vertical-align: middle;
+      height: 100%; }
     #PopOver #LeftPane a.back-button {
       display: block;
       width: 80px;
@@ -502,11 +509,10 @@ footer {
       z-index: 100; }
     #PopOver #LeftPane img.product-feature {
       vertical-align: middle;
-      max-height: 800px;
-      height: 100%;
-      position: absolute;
-      top: calc(50% - 400px);
-      left: calc(50% - 267px); }
+      width: 80%;
+      max-width: 533px;
+      margin: auto;
+      vertical-align: middle; }
     #PopOver #LeftPane #LeftPaneController {
       background-color: #FFFFFF;
       width: 100%;

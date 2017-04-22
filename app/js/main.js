@@ -78,12 +78,19 @@ jQuery(document).ready(function($) {
     // masonry after a short delay in case
     // the first method executes prior to the
     // full page being loaded.
-    setTimeout(function(){
+    // Lets run this every half a second for a total of
+    // 5 seconds to ensure it's working correctly
+    var InvokeInterval = setInterval(function(){
       $('.layout-grid').masonry({
         columnWidth: '.item-container',
         itemSelector: '.item-container'
       });
     }, 500);
+    // Lets make sure that we stop this interval job
+    // after 5 seconds.
+    setTimeout(function(){
+        clearInterval(InvokeInterval);
+    }, 5000);
   }
 
 });

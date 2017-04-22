@@ -12,9 +12,17 @@
     position: relative;
     background-color: #fafafc;
     width: calc(100% - 500px);
+    min-width: 320px;
     float: left;
     height: 100%;
     text-align: center;
+    display: table-cell;
+    .responsive-feature-image {
+      display: flex;
+      width: 100%;
+      vertical-align: middle;
+      height: 100%;
+    }
     a {
       &.back-button {
         display: block;
@@ -42,11 +50,13 @@
     img {
       &.product-feature {
         vertical-align: middle;
-        max-height: 800px;
-        height: 100%;
-        position: absolute;
-        top: calc(50% - 400px);
-        left: calc(50% - 267px);
+        width: 80%;
+        max-width: 533px;
+        margin: auto;
+        vertical-align: middle;
+        // position: absolute;
+        // top: calc(50% - 400px);
+        // left: calc(50% - 267px);
       }
     }
     #LeftPaneController {
@@ -288,4 +298,20 @@
 
     }
   }
+}
+@include respond-to(xsmall) {
+  #PopOver {
+    #LeftPane {
+
+    }
+    #RightPane {
+
+    }
+  }
+}
+@include respond-to(small) {
+
+}
+@include respond-to(medium) {
+
 }
