@@ -469,6 +469,8 @@ footer {
   bottom: 0;
   right: 0;
   width: 100%; }
+  #PopOver #MobilePopupNav {
+    display: none; }
   #PopOver #LeftPane {
     position: relative;
     background-color: #fafafc;
@@ -625,7 +627,8 @@ footer {
     #PopOver #RightPane .comments-container form {
       border-top: 1px solid #dcdddf;
       margin: 20px 60px 0 0;
-      position: relative; }
+      position: relative;
+      height: 140px; }
       #PopOver #RightPane .comments-container form textarea {
         width: 260px;
         max-width: 270px;
@@ -713,6 +716,75 @@ footer {
             background-image: url("../images/icon-heart-active.png");
             background-position: 0 0;
             background-repeat: no-repeat; }
+
+@media (max-width: 600px) {
+  #PopOver {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh; }
+    #PopOver #MobilePopupNav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: 30000;
+      background: #e7e7e9;
+      width: 100%; }
+      #PopOver #MobilePopupNav a {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center; }
+        #PopOver #MobilePopupNav a.tab-trigger img {
+          zoom: 30%;
+          margin-top: 30px; }
+        #PopOver #MobilePopupNav a.tab-trigger.active {
+          background-color: #FFFFFF;
+          border-right: 1px solid #8b8c90;
+          border-left: 1px solid #8b8c90;
+          border-bottom: 5px solid #f0522d; }
+        #PopOver #MobilePopupNav a.close-popover {
+          width: 50px;
+          height: 55px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background-color: #fafafc;
+          text-align: center;
+          border-left: 1px solid #dcdddf;
+          border-bottom: 1px solid #dcdddf;
+          padding: 19px 0;
+          box-sizing: border-box; }
+          #PopOver #MobilePopupNav a.close-popover img {
+            width: 20px; }
+    #PopOver #LeftPane {
+      height: 100%;
+      width: 100%; }
+      #PopOver #LeftPane #LeftPaneController a {
+        margin: 0 30px; }
+    #PopOver #RightPane {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      #PopOver #RightPane .tab-trigger {
+        display: none; }
+      #PopOver #RightPane .popup-tabs {
+        top: 50px;
+        left: 0;
+        padding-left: 20px;
+        width: calc(100vw - 20px);
+        margin-bottom: 80px; }
+        #PopOver #RightPane .popup-tabs .close-popover {
+          display: none; }
+      #PopOver #RightPane .product-holder img {
+        width: 110px; }
+      #PopOver #RightPane .product-holder .product-content .product-heart {
+        left: -70px; } }
 
 #AddToCartOverlay {
   display: none;
@@ -805,6 +877,36 @@ footer {
     #AddToCart #AddToCartContent p {
       color: #8c8d91;
       margin-top: 5px; }
+
+@media (max-width: 600px) {
+  #AddToCart {
+    width: 100vw; }
+    #AddToCart .close-add-to-cart {
+      z-index: 50000;
+      right: 0;
+      top: -100px; }
+    #AddToCart #AddToCartContent {
+      background-color: #FFFFFF;
+      z-index: 4000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      max-height: 100vh; }
+      #AddToCart #AddToCartContent .product-feature-image {
+        width: 100%;
+        float: none; }
+      #AddToCart #AddToCartContent .product-content {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        margin-top: 20px; }
+        #AddToCart #AddToCartContent .product-content .product-add-to-cart {
+          margin-top: 14px; }
+        #AddToCart #AddToCartContent .product-content .product-heart {
+          right: -30px; } }
 
 @font-face {
   font-family: 'brandon_grotesque_regularRg';

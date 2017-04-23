@@ -19,13 +19,33 @@ jQuery(document).ready(function($) {
     //TODO: Shortcut - normally I would make sure that when this form field is empty that the search button would be turned back on.
   });
 
-  $(document).on("click", ".tab-trigger", function(e) {
+  $(document).on("click", "#RightPane .tab-trigger", function(e) {
     e.preventDefault;
     var TargetContainer = $(this).data('action');
-    $('.tab-trigger').removeClass('active');
+    $('#RightPane .tab-trigger').removeClass('active');
     $(this).addClass('active');
     $('.popup-tabs').hide();
     $('.'+TargetContainer).show();
+    console.log('DEE DAA');
+  });
+
+  $(document).on("click", "#MobilePopupNav .tab-trigger", function(e) {
+    e.preventDefault;
+    var TargetContainer = $(this).data('action');
+    $('#MobilePopupNav .tab-trigger').removeClass('active');
+    $(this).addClass('active');
+    $('.popup-tabs').hide();
+    $('#LeftPane').hide();
+    $('#RightPane').hide();
+    $('#RightPane .comments-tab').hide();
+    $('#RightPane .products-tab').hide();
+    if(TargetContainer == '#LeftPane'){
+      $(TargetContainer).show();
+    }else{
+      $('#RightPane').show();
+      $(TargetContainer).show();
+    }
+
   });
 
   $(document).on("click", ".close-popover", function(e) {

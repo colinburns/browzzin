@@ -103,3 +103,46 @@
     }
   }
 }
+@include respond-to(xsmall) {
+  #AddToCart {
+    width: 100vw;
+    .close-add-to-cart {
+      z-index: 50000;
+      right: 0;
+      top: -100px;
+    }
+    #AddToCartContent {
+      background-color: $body-background;
+      z-index: 4000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      max-height: 100vh;
+      .product-feature-image {
+        width: 100%;
+        float:none;
+      }
+      .product-content {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        margin-top: 20px;
+        .product-add-to-cart {
+          margin-top: 14px;
+        }
+        .product-heart {
+          right: -30px;
+        }
+      }
+    }
+  }
+}
+@include respond-to(small) {
+
+}
+@include respond-to(medium) {
+
+}
