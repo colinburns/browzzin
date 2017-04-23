@@ -373,7 +373,7 @@ footer {
     width: 47.0%; }
   .layout-grid.column-1 {
     box-sizing: border-box;
-    max-width: 1024px; }
+    max-width: 600px; }
     .layout-grid.column-1 .item-container {
       width: 100%; }
   .layout-grid .item-container {
